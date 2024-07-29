@@ -1,3 +1,4 @@
 import Apresent from "./Apresent";
+import Tecnologias from "./Tecnologias";
 
-export { Apresent };
+export { Apresent, Tecnologias };

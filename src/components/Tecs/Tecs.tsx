@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 
 interface TecsProps {
@@ -8,8 +9,8 @@ interface TecsProps {
 
 const Tecs = ({ nome, path }: TecsProps) => {
   return (
-    <div className="border-roxo flex flex-col items-center justify-between h-60 border-2 p-3 rounded-lg">
-      <img src={path} alt={`${nome} logo`} />
+    <div className="border-roxo flex flex-col items-center justify-between h-60 border-2 p-5 rounded-lg">
+      <Image src={path} alt={`${nome} logo`} width={130} height={130} />
       <p className="text-roxo font-bold text-2xl">{nome}</p>
     </div>
   );
