@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="flex bg-preto items-center justify-between p-6 sticky top-0 left-0">
+    <header className="flex bg-preto items-center justify-between p-6 sticky top-0 left-0 z-50">
       <div className="flex gap-1 text-2xl">
         Anthoni Campos <p className="text-roxo">| Dev</p>
       </div>
