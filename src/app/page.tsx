@@ -1,7 +1,5 @@
+import { Layout } from "@/components/Layout";
+
 export default function Home() {
-  return (
-    <main>
-      <h1>oi</h1>
-    </main>
-  );
+  return <Layout>oi</Layout>;
 }

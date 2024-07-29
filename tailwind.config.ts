@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         preto: "#020202",
+        roxo: "#402A6D",
       },
     },
   },
