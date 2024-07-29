@@ -3,7 +3,7 @@ import { Tecs } from "../Tecs";
 
 const Tecnologias = () => {
   return (
-    <section className="flex flex-col h-screen w-full pt-5 items-center">
+    <section className="flex flex-col h-screen w-full pt-10 items-center">
       <div className="flex w-full items-center justify-center gap-10">
         <div className="border-b-2 w-[20%]"></div>
         <p className="text-4xl font-bold">Tecnologias</p>

@@ -28,7 +28,7 @@ const Apresent = () => {
         <p className="text-3xl">Foco em resultados e designs responsivos</p>
       </section>
 
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between w-full pt-6">
         <Image
           src="/assets/pattern1.png"
           alt="pattern1"
@@ -38,8 +38,8 @@ const Apresent = () => {
         <Image
           src="/assets/pattern3.png"
           alt="pattern1"
-          width={500}
-          height={500}
+          width={600}
+          height={600}
         />
         <Image
           src="/assets/pattern4.png"
