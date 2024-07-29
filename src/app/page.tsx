@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import { Layout } from "@/components/Layout";
 import { Apresent } from "@/components/Seções";
-import Image from "next/image";
+import { Tecs } from "@/components/Tecs";
+import path from "path";
 
 export default function Home() {
   return (
@@ -14,7 +14,47 @@ export default function Home() {
           <p className="text-4xl font-bold">Tecnologias</p>
           <div className="border-b-2 w-[20%]"></div>
         </div>
+        <div className="grid grid-cols-4 pt-10 gap-5">
+          {tecs.map((tecnologia, index) => (
+            <Tecs nome={tecnologia.nome} path={tecnologia.path} key={index} />
+          ))}
+        </div>
       </section>
     </Layout>
   );
 }
+
+const tecs = [
+  {
+    nome: "React",
+    path: "/assets/react.svg",
+  },
+  {
+    nome: "React",
+    path: "/assets/react.svg",
+  },
+  {
+    nome: "React",
+    path: "/assets/react.svg",
+  },
+  {
+    nome: "React",
+    path: "/assets/react.svg",
+  },
+  {
+    nome: "React",
+    path: "/assets/react.svg",
+  },
+  {
+    nome: "React",
+    path: "/assets/react.svg",
+  },
+  {
+    nome: "React",
+    path: "/assets/react.svg",
+  },
+  {
+    nome: "React",
+    path: "/assets/react.svg",
+  },
+];
