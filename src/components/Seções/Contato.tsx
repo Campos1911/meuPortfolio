@@ -3,7 +3,7 @@ import React from "react";
 
 const Contato = () => {
   return (
-    <section className="flex flex-col h-screen w-full pt-10 items-center">
+    <section className="flex flex-col h-screen w-full pt-10 items-center absolute">
       <div className="flex w-full items-center justify-center gap-10">
         <div className="border-b-2 w-[20%]"></div>
         <div className="text-4xl font-bold flex gap-2">Contato</div>
@@ -50,11 +50,11 @@ const Contato = () => {
           </form>
 
           <Image
-            src="/assets/pattern5.png"
+            src="/assets/pattern1.png"
             alt="Pattern 5"
             width={400}
             height={400}
-            className="absolute left-0 bottom-[-2720px] z-[-10]"
+            className="absolute left-0 z-[-10]"
           />
           <Image
             src="/assets/pattern2.png"
