@@ -3,7 +3,7 @@ import React from "react";
 
 const Sobre = () => {
   return (
-    <section className="flex flex-col h-screen w-full pt-24 items-center">
+    <section className="flex flex-col h-screen w-full pt-0 items-center">
       <div className="flex w-full items-center justify-center gap-10">
         <div className="border-b-2 w-[20%]"></div>
         <div className="text-4xl font-bold flex gap-2">
