@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Contato = () => {
@@ -47,6 +48,21 @@ const Contato = () => {
               Enviar
             </button>
           </form>
+
+          <Image
+            src="/assets/pattern5.png"
+            alt="Pattern 5"
+            width={400}
+            height={400}
+            className="absolute left-0 bottom-[-2720px] z-[-10]"
+          />
+          <Image
+            src="/assets/pattern2.png"
+            alt="Pattern 2"
+            width={200}
+            height={200}
+            className="absolute right-0 translate-y-[-50%] z-[-10]"
+          />
         </div>
       </div>
     </section>
