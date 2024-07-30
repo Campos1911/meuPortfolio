@@ -7,7 +7,7 @@ const Layout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div>
+    <div className="w-full">
       <Header />
       {children}
     </div>
