@@ -10,7 +10,7 @@ const Contato = () => {
         <div className="border-b-2 w-[20%]"></div>
       </div>
 
-      <div className="w-full justify-center flex py-10 gap-10 px-[5%] h-screen">
+      <div className="w-full justify-center flex py-10 px-[5%]">
         <div className="border-2 border-roxo w-[80%] rounded-xl p-10 gap-10 flex flex-col items-center">
           <p className="font-bold text-3xl">Vamos construir algo juntos!</p>
 
@@ -52,8 +52,8 @@ const Contato = () => {
           <Image
             src="/assets/pattern1.png"
             alt="Pattern 5"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             className="absolute left-0 z-[-10]"
           />
           <Image
