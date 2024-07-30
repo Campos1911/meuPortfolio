@@ -1,5 +1,11 @@
 import { Layout } from "@/components/Layout";
-import { Apresent, Projetos, Sobre, Tecnologias } from "@/components/Seções";
+import {
+  Apresent,
+  Contato,
+  Projetos,
+  Sobre,
+  Tecnologias,
+} from "@/components/Seções";
 
 export default function Home() {
   return (
@@ -8,6 +14,7 @@ export default function Home() {
       <Tecnologias />
       <Projetos />
       <Sobre />
+      <Contato />
     </Layout>
   );
 }
