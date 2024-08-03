@@ -3,13 +3,13 @@ import { Tecs } from "../Tecs";
 
 const Tecnologias = () => {
   return (
-    <section className="flex flex-col h-screen w-full pt-10 items-center">
+    <section className="flex flex-col w-full md:pt-10 pt-20 px-2 items-center">
       <div className="flex w-full items-center justify-center gap-10">
         <div className="border-b-2 w-[20%]"></div>
-        <p className="text-4xl font-bold">Tecnologias</p>
+        <p className="md:text-4xl text-2xl font-bold">Tecnologias</p>
         <div className="border-b-2 w-[20%]"></div>
       </div>
-      <div className="grid grid-cols-4 pt-10 gap-y-5 gap-x-10">
+      <div className="grid md:grid-cols-4 grid-cols-2 md:px-0 px-4 pt-10 gap-5 md:gap-x-10">
         {tecs.map((tecnologia, index) => (
           <Tecs nome={tecnologia.nome} path={tecnologia.path} key={index} />
         ))}
