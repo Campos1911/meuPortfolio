@@ -11,7 +11,7 @@ const Sobre = () => {
         </div>
         <div className="border-b-2 w-[20%]"></div>
       </div>
-      <div className="w-full justify-center flex flex-col pt-10 gap-10 px-[5%]">
+      <div className="w-full justify-center flex md:flex-row flex-col pt-10 gap-10 px-[5%]">
         <div className="md:w-[40%] w-full flex flex-col gap-3 text-xl">
           <p className="font-bold text-4xl">Anthoni Campos</p>
           <p>Vila Velha - ES</p>
