@@ -7,7 +7,7 @@ import { Element } from "react-scroll";
 const Sobre = () => {
   return (
     <Element name="sobre">
-      <section className="flex flex-col w-full md:px-0 px-2 pt-24 items-center">
+      <section className="flex flex-col w-full md:px-0 px-2 pt-16 items-center">
         <div className="flex w-full items-center justify-center gap-10">
           <div className="border-b-2 w-[20%]"></div>
           <div className="md:text-4xl text-2xl font-bold flex gap-2">

@@ -50,7 +50,7 @@ const Header = () => {
             to="sobre"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-70}
             duration={500}
             className="cursor-pointer hover:text-purple-900 duration-200"
           >
