@@ -13,7 +13,7 @@ const Tecnologias = () => {
           <p className="md:text-4xl text-2xl font-bold">Tecnologias</p>
           <div className="border-b-2 w-[20%]"></div>
         </div>
-        <div className="grid md:grid-cols-4 grid-cols-2 md:px-0 px-4 pt-10 gap-5 md:gap-x-10">
+        <div className="grid md:grid-cols-4 grid-cols-2 px-4 md:px-4 lg:px-0 pt-10 lg: gap-5 md:gap-x-5 lg:gap-x-10">
           {tecs.map((tecnologia, index) => (
             <Tecs nome={tecnologia.nome} path={tecnologia.path} key={index} />
           ))}

@@ -9,7 +9,7 @@ const Apresent = () => {
   return (
     <Element name="inic">
       <section className="flex flex-col items-center w-full justify-center pt-28">
-        <div className="flex md:gap-4 gap-2 text-2xl md:text-7xl font-bold">
+        <div className="flex md:gap-4 gap-2 text-2xl md:text-5xl lg:text-7xl font-bold">
           Desenvolvedor
           <p className="text-roxo">
             <TypeIt
@@ -26,7 +26,7 @@ const Apresent = () => {
             />
           </p>
         </div>
-        <p className="md:text-3xl text-sm">
+        <p className="text-sm md:text-2xl lg:text-3xl">
           Foco em resultados e designs responsivos
         </p>
       </section>

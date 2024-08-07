@@ -15,7 +15,7 @@ const Contato = () => {
         </div>
 
         <div className="w-full justify-center flex py-10 md:px-[5%]">
-          <div className="border-2 border-roxo w-[80%] rounded-xl p-10 gap-10 flex flex-col items-center">
+          <div className="border-2 border-roxo w-[80%] rounded-xl p-5 lg:p-10 gap-10 flex flex-col items-center">
             <p className="font-bold md:text-3xl text-xl text-center md:text-start">
               Vamos construir algo juntos!
             </p>
