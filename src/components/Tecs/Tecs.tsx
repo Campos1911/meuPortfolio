@@ -14,7 +14,7 @@ const Tecs = ({ nome, path }: TecsProps) => {
       p-5 rounded-lg hover:translate-y-[-10px] duration-[250ms] hover:border-white hover:text-white text-roxo"
     >
       <Image src={path} alt={`${nome} logo`} width={130} height={130} />
-      <p className=" font-bold text-2xl">{nome}</p>
+      <p className="font-bold pt-2 md:text-2xl">{nome}</p>
     </div>
   );
 };
