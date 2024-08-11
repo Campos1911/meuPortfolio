@@ -31,7 +31,7 @@ const Apresent = () => {
         </p>
       </section>
 
-      <div className="md:flex justify-between w-full pt-6 hidden">
+      <div className="lg:flex justify-between w-full pt-6 hidden">
         <Image
           src="/assets/pattern1.png"
           alt="pattern1"
@@ -49,27 +49,6 @@ const Apresent = () => {
           alt="pattern1"
           width={300}
           height={300}
-        />
-      </div>
-
-      <div className="justify-between w-full pt-6 hidden">
-        <Image
-          src="/assets/pattern1.png"
-          alt="pattern1"
-          width={100}
-          height={100}
-        />
-        <Image
-          src="/assets/pattern3.png"
-          alt="pattern1"
-          width={200}
-          height={200}
-        />
-        <Image
-          src="/assets/pattern4.png"
-          alt="pattern1"
-          width={100}
-          height={100}
         />
       </div>
     </Element>

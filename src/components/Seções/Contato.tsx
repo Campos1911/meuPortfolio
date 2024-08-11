@@ -7,7 +7,7 @@ import { Element } from "react-scroll";
 const Contato = () => {
   return (
     <Element name="contato">
-      <section className="flex flex-col w-full pt-20 items-center absolute">
+      <section className="flex flex-col w-full pt-20 items-center">
         <div className="flex w-full items-center justify-center gap-10">
           <div className="border-b-2 w-[20%]"></div>
           <div className="md:text-4xl text-2xl font-bold">Contato</div>
