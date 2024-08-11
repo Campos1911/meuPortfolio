@@ -12,16 +12,16 @@ import { Link as Scroll } from "react-scroll";
 
 const Header = () => {
   return (
-    <header className="flex bg-preto items-center justify-between p-6 sticky top-0 left-0 z-99">
+    <header className="flex bg-preto items-center justify-between p-6 sticky top-0 left-0 z-1000">
       <div className="flex gap-1 lg:text-2xl">
         Anthoni Campos <p className="text-roxo">| Dev</p>
       </div>
       <div className="md:hidden">
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <RiMenu4Line />
+            <RiMenu4Line className="outline-none" />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="p-3 bg-black">
+          <DropdownMenuContent className="p-3 bg-preto">
             <DropdownMenuItem>
               <Scroll
                 activeClass="active"
