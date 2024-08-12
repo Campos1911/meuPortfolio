@@ -1,10 +1,42 @@
 "use client";
 
+import emailjs from "@emailjs/browser";
 import Image from "next/image";
-import React from "react";
+import React, { FormEvent, FormEventHandler, useState } from "react";
 import { Element } from "react-scroll";
 
 const Contato = () => {
+  const [email, setEmail] = useState<string>("");
+  const [username, setUsername] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+    const templateParams = {
+      from_name: email,
+      username: username,
+      message: message,
+    };
+    emailjs
+      .send(
+        "service_j0ap1c2",
+        "template_0zukoa8",
+        templateParams,
+        "qlTW1UfBPsgxn9R9k"
+      )
+      .then(
+        (response) => {
+          console.log("Email enviado", response.status, response.text);
+          setEmail("");
+          setMessage("");
+          setUsername("");
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
+  };
+
   return (
     <Element name="contato">
       <section className="flex flex-col w-full pt-20 items-center">
@@ -20,7 +52,10 @@ const Contato = () => {
               Vamos construir algo juntos!
             </p>
 
-            <form className="w-full flex flex-col gap-5 items-center">
+            <form
+              onSubmit={handleSubmit}
+              className="w-full flex flex-col gap-5 items-center"
+            >
               <section className="flex flex-col gap-2 w-full ">
                 <p className="md:text-xl font-bold">Qual o seu nome?</p>
                 <input
@@ -28,6 +63,8 @@ const Contato = () => {
                   type="text"
                   name="nome"
                   id="nome"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                 />
               </section>
 
@@ -38,6 +75,8 @@ const Contato = () => {
                   type="text"
                   name="nome"
                   id="nome"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </section>
 
@@ -49,10 +88,15 @@ const Contato = () => {
                   className="rounded-lg h-28 text-black outline-none"
                   name="nome"
                   id="nome"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </section>
 
-              <button className="bg-roxo md:w-[25%] w-[60%] h-10 rounded-lg hover:bg-purple-900 duration-200">
+              <button
+                type="submit"
+                className="bg-roxo md:w-[25%] w-[60%] h-10 rounded-lg hover:bg-purple-900 duration-200"
+              >
                 Enviar
               </button>
             </form>
