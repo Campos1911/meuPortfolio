@@ -26,7 +26,7 @@ const Projetos = () => {
           ></Image>
           <Image
             src="/assets/paulo.png"
-            alt="Mardu Cosméticos"
+            alt="Paulo Costa"
             width={1000}
             height={1000}
             className="rounded-md hover:opacity-30 duration-200 cursor-pointer"
