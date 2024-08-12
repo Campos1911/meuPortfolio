@@ -17,7 +17,7 @@ const Projetos = () => {
         </div>
         <div className="grid md:grid-cols-2 pt-10 gap-5 w-[90%] lg:w-[80%]">
           <Image
-            src="/assets/mardu.png"
+            src="/assets/mardu.jpg"
             alt="Mardu Cosméticos"
             width={1000}
             height={1000}
@@ -25,7 +25,7 @@ const Projetos = () => {
             onClick={() => router.push("https://marducosmeticos.com/")}
           ></Image>
           <Image
-            src="/assets/paulo.png"
+            src="/assets/paulo.jpg"
             alt="Paulo Costa"
             width={1000}
             height={1000}
