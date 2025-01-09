@@ -32,6 +32,16 @@ const Projetos = () => {
             className="rounded-md hover:opacity-30 duration-200 cursor-pointer"
             onClick={() => router.push("https://dinheirofobia.com/")}
           />
+          <Image
+            src="/assets/template1.png"
+            alt="Website Portfólio"
+            width={1000}
+            height={1000}
+            className="rounded-md hover:opacity-30 duration-200 cursor-pointer"
+            onClick={() =>
+              router.push("https://website-template1-nu.vercel.app/")
+            }
+          />
         </div>
       </section>
     </Element>

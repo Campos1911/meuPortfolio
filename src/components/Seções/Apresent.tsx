@@ -16,7 +16,7 @@ const Apresent = () => {
               options={{ loop: true }}
               getBeforeInit={(instance) => {
                 instance
-                  .type("Front-End")
+                  .type("Fullstack")
                   .pause(2500)
                   .delete()
                   .pause(2500)
